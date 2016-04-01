@@ -1,0 +1,60 @@
+	
+	.select-buttons {
+		display: inline-block;
+		max-width: 60%;
+		vertical-align: middle;
+		border: 1px solid #EEE;
+		padding: 2px;
+	}
+	.select-buttons .button {
+		float: left;
+		margin: 2px;
+		padding: 2px 8px;
+		line-height: 1.4em;
+		white-space: nowrap;
+		background-color: #F3F3F3;
+		border: 1px solid #DDD;
+		border-radius: 4px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+		color: #666;
+		font-size: 13px;
+		text-decoration: none;
+	}
+	.select-buttons .button:hover {
+		background-color: #DDD;
+		border: 1px solid #BBB;
+		color: #333;
+	}
+	.select-buttons .button.checked,
+	.select-buttons .button.checked:hover {
+		background-color: #3AA9E4;
+		border: 1px solid #39F;
+		color: #FFF;
+	}
+	
+	.select-buttons .button.disabled,
+	.select-buttons .button.disabled:hover {
+		/*background-color: #DDD;
+		border: 1px solid #BBB;
+		color: #333;*/
+		opacity: 0.6;
+		-moz-opacity: 0.6;
+		-webkit-opacity: 0.6;
+		cursor: default;
+	}
+	
+	.select-buttons .button.disabled,
+	.select-buttons .button.disabled:hover {
+		background-color: #DDD;
+		border: 1px solid #BBB;
+		color: #333;
+	}
+	
+	.select-buttons .button.checked.disabled,
+	.select-buttons .button.checked.disabled:hover {
+		background-color: #3AA9E4;
+		border: 1px solid #39F;
+		color: #FFF;
+	}

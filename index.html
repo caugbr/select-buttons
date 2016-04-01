@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sem título</title>
+
+<link rel="stylesheet" type="text/css" href="select-buttons.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="select-buttons.min.js"></script>
+<script>
+	$(function() {
+		$('#cores').selectButtons({
+			options: ['Azul', 'Amarelo', 'Verde', 'Vermelho', {label: 'Minha cor', value: 'fuxia'}], 
+			noEmpty: true, 
+			multiple: true,
+			selectedIndexes: [0]
+		});	
+		$('#cores2').selectButtons({
+			options: ['Azul', 'Amarelo', 'Verde', 'Vermelho', {label: 'Minha cor', value: 'fuxia', checked: true, disabled: true}], 
+			noEmpty: true
+		});	
+		$('#nomes').selectButtons();	
+	});
+</script>
+
+</head>
+
+<body>
+
+	<div class="main">
+		<form>
+			<p>
+				<label for="cores">Escolha suas cores:</label>
+				<input type="hidden" id="cores">
+			</p>
+			<p>
+				<label for="cores2">Escolha uma cor:</label>
+				<input type="hidden" id="cores2">
+			</p>
+			<p>
+				<label for="nomes">Escolha suas cores:</label>
+				<select id="nomes" multiple>
+					<option value="João">João</option>
+					<option value="Maria" selected>Maria</option>
+					<option value="Paula">Paula</option>
+					<option value="Joana">Joana</option>
+				</select>
+			</p>
+		</form>
+	</div>
+
+</body>
+</html>
