@@ -2,7 +2,7 @@
 
 A simple replacement for SELECTs or INPUT groups (type checkbox / radio). All options are always visible as buttons.
 These buttons has two states, checked and unchecked, making easy to user understand the state of his options.
-Mount it from an array of options or based in a SELECT element.
+You can mount it from an array of options or based in a SELECT element.
 
 You can...
 
